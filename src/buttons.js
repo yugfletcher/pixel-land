@@ -1,6 +1,4 @@
 //file meant to handle all of the button stuff
-import './style.css';
-
 let button = document.querySelector("#button1");
 button.addEventListener("click", doSomething, false);
 
