@@ -6,15 +6,94 @@
         <title>Pixel Land!</title> 
         <style>
             body{
-                background-color: rgba(1, 1, 56, 0.747);
+                background-color: azure;
                 font-family: 'Courier New', Courier, monospace;
-                color: white;
+                color: black;
                 font-size: large;
+            }
+            h4{
+                color: gray;
+            }
+            #button1{
+                background-color: #0000FF;
+                border: 3px #333 solid;
+                padding: 15px;
+            }
+            #button1:hover{
+                border: 3px grey solid;
+            }
+            #button2{
+                background-color: #008000;
+                border: 3px #333 solid;
+                padding: 15px;
+            }
+            #button2:hover{
+                border: 3px grey solid;
+            }
+            #button3{
+                background-color: #FF0000;
+                border: 3px #333 solid;
+                padding: 15px;
+            }
+            #button3:hover{
+                border: 3px grey solid;
+            }
+            #button4{
+                background-color: #FFFFFF;
+                border: 3px #333 solid;
+                padding: 15px;
+            }
+            #button4:hover{
+                border: 3px grey solid;
+            }
+            #button5{
+                background-color: #FFFF00;
+                border: 3px #333 solid;
+                padding: 15px;
+            }
+            #button5:hover{
+                border: 3px grey solid;
+            }
+            #button6{
+                background-color: #000000;
+                border: 3px #333 solid;
+                padding: 15px;
+            }
+            #button6:hover{
+                border: 3px grey solid;
+            }
+            #button7{
+                background-color: #800080;
+                border: 3px #333 solid;
+                padding: 15px;
+            }
+            #button7:hover{
+                border: 3px grey solid;
+            }
+            #button8{
+                background-color: #FFA500;
+                border: 3px #333 solid;
+                padding: 15px;
+            }
+            #button8:hover{
+                border: 3px grey solid;
             }
         </style>
     </head> 
     <body>
         <h1><center>Pixel Land!</center></h1>
-        <canvas class="webgl"></canvas> 
+        <center><h4>Pick a color...</h4></center>
+        <center><div id="container">
+            <button id="button1"></button>
+            <button id="button2"></button>
+            <button id="button3"></button>
+            <button id="button4"></button>
+            <button id="button5"></button>
+            <button id="button6"></button>
+            <button id="button7"></button>
+            <button id="button8"></button>
+        </div></center>
+        <canvas class="webgl"></canvas>
+        <script src="script.js"></script> 
     </body>
 </html>
