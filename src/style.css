@@ -1,6 +1,7 @@
-/* This obliterates any margin or padding on all elements*/ * {
-    margin: 0;
-    padding: 0;
+/* This obliterates any margin or padding on all elements*/
+* {
+  margin: 0;
+  padding: 0;
 }
 /* then, fix our margin and padding issues by applying some css commands 
 to the webgl element */
@@ -10,6 +11,79 @@ to the webgl element */
     left: 0;
     outline: none;
 }*/
-/* this removes all scrolling, even on touch screens */ html, body {
-    overflow: hidden;
+/* this removes all scrolling, even on touch screens */
+html,
+body {
+  overflow: hidden;
+  background-color: azure;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: large;
+}
+h4 {
+  color: gray;
+}
+#button1 {
+  background-color: #0000ff;
+  border: 3px #333 solid;
+  padding: 15px;
+}
+#button1:hover {
+  border: 3px grey solid;
+}
+#button2 {
+  background-color: #008000;
+  border: 3px #333 solid;
+  padding: 15px;
+}
+#button2:hover {
+  border: 3px grey solid;
+}
+#button3 {
+  background-color: #ff0000;
+  border: 3px #333 solid;
+  padding: 15px;
+}
+#button3:hover {
+  border: 3px grey solid;
+}
+#button4 {
+  background-color: #ffffff;
+  border: 3px #333 solid;
+  padding: 15px;
+}
+#button4:hover {
+  border: 3px grey solid;
+}
+#button5 {
+  background-color: #ffff00;
+  border: 3px #333 solid;
+  padding: 15px;
+}
+#button5:hover {
+  border: 3px grey solid;
+}
+#button6 {
+  background-color: #000000;
+  border: 3px #333 solid;
+  padding: 15px;
+}
+#button6:hover {
+  border: 3px grey solid;
+}
+#button7 {
+  background-color: #800080;
+  border: 3px #333 solid;
+  padding: 15px;
+}
+#button7:hover {
+  border: 3px grey solid;
+}
+#button8 {
+  background-color: #ffa500;
+  border: 3px #333 solid;
+  padding: 15px;
+}
+#button8:hover {
+  border: 3px grey solid;
 }
