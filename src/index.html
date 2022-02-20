@@ -6,18 +6,16 @@
         <title>Pixel Land!</title> 
         <link rel="stylesheet" href="style.css">
         <script src="jquery-3.6.0.js"></script>
-        <script>
-            let jsData;
+        <!-- <script>
             $(document).ready(function() {
                 const bclick = document.getElementById("button1");
                 bclick.addEventListener("click", function getData(){
                     $.get("http://pixel-land-backend.fly.dev/fetch_cubes", function(data, status){
                         alert("Data: " + data + "\nStatus: " + status);
-                        jsData = data;
                     });
                 });
             });
-        </script>
+        </script> -->
         <!--<script src="buttons.js"></script> -->
     </head> 
     <body>
@@ -34,5 +32,27 @@
             <button id="button8" class="item"></button>
         </div></center>
         <center><canvas class="webgl"></canvas></center>
+        <script>
+            let x = new Array();
+
+            const bclick = document.getElementById("button1");
+            bclick.addEventListener("click", function getData(){
+                let url = "http://pixel-land-backend.fly.dev/fetch_cubes";
+                $.get(url, function(data){
+                    x = data;
+                    console.table(x);
+
+                    $.post(url,
+                    { 
+                        "x": 0,
+                        "y": 0,
+                        "cube_color": "Red"
+                    }, 
+                    function(data, status){
+                      alert("Data: " + data + "\nStatus: " + status);
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
