@@ -1,0 +1,17 @@
+/* This obliterates any margin or padding on all elements*/ * {
+    margin: 0;
+    padding: 0;
+}
+/* then, fix our margin and padding issues by applying some css commands 
+to the webgl element */ .webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+/* this removes all scrolling, even on touch screens */ html, body {
+    overflow: hidden;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
