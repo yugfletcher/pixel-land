@@ -33,24 +33,29 @@
         </div></center>
         <center><canvas class="webgl"></canvas></center>
         <script>
-            let x = new Array();
+            let x;
 
             const bclick = document.getElementById("button1");
             bclick.addEventListener("click", function getData(){
-                let url = "http://pixel-land-backend.fly.dev/fetch_cubes";
-                $.get(url, function(data){
+                let url1 = "http://pixel-land-backend.fly.dev/fetch_cubes";
+                let url2 = "http://pixel-land-backend.fly.dev/set_cube";
+                $.get(url1, function(data){
                     x = data;
                     console.table(x);
-
-                    $.post(url,
-                    { 
+                });
+                let x = {
+                    x: 0,
+                    y: 0,
+                    cube_color: "Blue"
+                }
+                $.post(url2,
+                    {
                         "x": 0,
                         "y": 0,
-                        "cube_color": "Red"
-                    }, 
+                        "cube_color": "Blue"
+                    },
                     function(data, status){
-                      alert("Data: " + data + "\nStatus: " + status);
-                    });
+                        alert("Data: " + data + "\nStatus: " + status);
                 });
             });
         </script>
