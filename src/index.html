@@ -34,20 +34,20 @@
         <center><canvas class="webgl"></canvas></center>
         <script>
             let x;
-
+            
             const bclick = document.getElementById("button1");
             bclick.addEventListener("click", function getData(){
                 let url1 = "http://pixel-land-backend.fly.dev/fetch_cubes";
                 let url2 = "http://pixel-land-backend.fly.dev/set_cube";
+                
+                //calls jQuery get request function to grab cube color info
                 $.get(url1, function(data){
                     x = data;
                     console.table(x);
                 });
-                let x = {
-                    x: 0,
-                    y: 0,
-                    cube_color: "Blue"
-                }
+
+                //post request function to adjust dataset
+                //does not function, unable to pass data as .json properly
                 $.post(url2,
                     {
                         "x": 0,

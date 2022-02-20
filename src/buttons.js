@@ -1,4 +1,5 @@
 //file meant to handle all of the button stuff
+//ultimately not used in final product
 let button1 = document.querySelector("#button1");
 button1.addEventListener("click", getData);
 
